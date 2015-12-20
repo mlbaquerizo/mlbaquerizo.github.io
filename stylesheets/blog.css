@@ -1,0 +1,17 @@
+
+
+main {
+  overflow: hidden;
+  position: static;
+  padding-bottom: 70px;
+}
+
+main p {
+  font-size: 1.1em;
+  text-align: justify;
+  width: 95%;
+  text-overflow: none;
+  white-space: normal;
+  overflow: visible;
+  position: relative;
+}
