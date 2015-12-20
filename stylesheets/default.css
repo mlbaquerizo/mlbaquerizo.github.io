@@ -77,12 +77,16 @@ main table {
   table-layout: fixed;
 }
 
+main {
+  padding-bottom: 70px;
+}
+
 main td {
   height: 200px;
 }
 
 main p {
-  text-align: justify;
+  text-align: center;
   width: 95%;
   text-overflow: ellipsis;
   white-space: nowrap;
