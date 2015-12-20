@@ -1,0 +1,110 @@
+html {
+  height: 100%;
+  background-color: #ffffff;
+}
+
+body {
+  font-family: monospace;
+  background-color: #eaf4f6;
+  width: 75em;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  border-left: 1px solid #8c9293;
+  border-right: 1px solid #8c9293;
+  top: 0;
+}
+
+header {
+  font-family: 'Times New Roman';
+  background-color: #d2dbdd;
+  font-weight: 900;
+  letter-spacing: 2px;
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px; /*set to same value as height to center vertically*/
+}
+
+h1 {
+  margin: 0 0 0 0;
+}
+
+nav {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: .8em;
+  background-color: #d2dbdd;
+}
+
+.nav1, .nav2, .nav3, .nav4 {
+  width: 24%;
+  display: inline-block;
+  height: 30px;
+  border: 1px solid #8c9293;
+  border-radius: 2px;
+}
+
+nav:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+  line-height: 0;
+  font-size: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+main table {
+  width: 100%;
+  text-align: center;
+  border: none;
+  table-layout: fixed;
+}
+
+main td {
+  height: 200px;
+}
+
+main p {
+  text-align: justify;
+  width: 95%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height:70px;
+  background-color:#d2dbdd;
+}
+
+footer table {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+footer img {
+  height: 80%;
+  width: 80%;
+  /*Scale down social icons*/
+}
