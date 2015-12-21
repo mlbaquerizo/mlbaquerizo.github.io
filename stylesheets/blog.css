@@ -14,3 +14,7 @@ main p {
   overflow: visible;
   position: relative;
 }
+
+.em {
+  font-style: italic;
+}
