@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Technical Blog 4.8</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    
+  </head>
+  
+  <body>
+    <a class="home" href="../index.html">
+    <header>
+      <h1>Matthew L. Baquerizo</h1>
+    </header>
+    </a>
+    
+    <nav>
+        <a class="nav1" href="#"><div>IMAGES--COMING SOON</div></a>
+        <a class="nav2" href="#"><div>MUSIC--COMING SOON</div></a>
+        <a class="nav3" href="./index.html"><div>BLOG</div></a>
+        <a class="nav4" href="#"><div>ABOUT--COMING SOON</div></a>
+    </nav>
+    
+    <main>
+      <h1>Technical Blog 4.8</h1>
+      <h2>Ruby | Arrays &amp; Hashes</h2>
+      <h4>01-03-2016</h4>
+
+    <section>
+    <p>
+      Some of the most powerful tools in the Ruby language are Arrays and Hashes. Both of these tools are kind of containers that have the ability to house many objects at a time. Because they can contain many objects, they are useful for storing information. Arrays and Hashes are capable of storing any kind of object; integers, floats, strings, even other arrays/hashes.
+    </p>
+    <p>
+      I like to think of arrays as lists. They are usually used for storing many of the same type of object. So for example, we can have an array of groceries we need to buy. Let's try it. I will make an array called groceries:
+    </p>
+    <p>
+      <code>
+        <p>groceries = [milk, juice, eggs, lettuce, apples]</p>
+      </code>
+    </p>
+    <p>
+      Simple enough. It is important to know that these lists are ordered. Meaning that every object in an array has an assigned index, starting with the first object at index 0. An object in an array can be accessed via its index, like so:
+    </p>
+    <p>
+      <code>
+        <p>puts groceries[0]   #=> milk</p>
+      </code>
+    </p>
+    <p>
+      <code>
+        <p>puts groceries[3]   #=> lettuce</p>
+      </code>
+    </p>
+    <p>
+      Hashes are much like arrays in that they both are able to contain many objects. If arrays are lists, then we could think of hashes as dictionaries. In a hash, each item is stored as a key/value pair. Keys and values are variables that have some kind of relationship (i.e. values are definitions to keys). Here is a simple hash:
+    </p>
+    <p>
+      <code>
+        <p>pets = {"dog" => "Pluto", "cat" => "Garfield", "fish" => "Nemo"}</p>
+      </code>
+    </p>
+    <p>
+      The important thing to know about hashes is that each key is unique. We cannot assign two different values to the same key. Like arrays, we can access any value in a hash through its key:
+    </p>
+    <p>
+      <code>
+        <p>puts pets["dog"]   #=> "Pluto"</p>
+      </code>
+    </p>
+    <p>
+      What makes arrays and hashes so powerful is that we can run many ruby methods on them. We can iterate through each item in an array or hash and apply some function to them. We can add or take away items to and from an array or hash. They can store information for later use. The use of each depends on what kind of program they are used in. One example of using a hash would be in commercial websites, where a hash could be a database of products (key) and their respective prices (value). One example of using an array would be for creating interactive programs to add lists of tasks.
+    </p>
+    </section>
+    </main>
+    
+    <footer>
+      <table>
+        <tr>
+          <td><a href="https://www.facebook.com/matthew.baquerizo"><img src="../imgs/facebookicon.png" alt="Facebook"></a>
+          </td>
+          <td><a href="https://www.linkedin.com/in/matthew-baquerizo-b437a4a8"><img src="../imgs/linkedinicon.png" alt="Linkedin"></a>
+          </td>
+          <td><a href="https://github.com/mlbaquerizo"><img src="../imgs/githubicon.png" alt="Github"></a>
+          </td>
+          <td><a href="mailto:mlbaquerizo47@gmail.com?Subject=Hello!"><img src="../imgs/mailicon.png" alt="Email"></a>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
