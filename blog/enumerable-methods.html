@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Technical Blog 1.7</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    
+  </head>
+  
+  <body>
+    <a class="home" href="../index.html">
+    <header>
+      <h1>MATTHEW L. BAQUERIZO</h1>
+    </header>
+    </a>
+    
+    <nav>
+        <a class="nav1" href="#"><div>IMAGES--COMING SOON</div></a>
+        <a class="nav2" href="#"><div>MUSIC--COMING SOON</div></a>
+        <a class="nav3" href="./index.html"><div>BLOG</div></a>
+        <a class="nav4" href="#"><div>ABOUT--COMING SOON</div></a>
+    </nav>
+    
+    <main>
+      <h1>Technical Blog 5.9</h1>
+      <h2>Ruby | Enumerable#map</h2>
+      <h4>01-11-16</h4>
+
+    <section>
+    <p>
+      Classes in Ruby are like blueprints that house various methods and other attributes that can be used on each object in the Class. We can take a step back from that and look at Modules. Modules house various methods that can be used across various Classes. This is just one aspect that makes Ruby such a functional language. It allows us to have methods baked into our own classes by default.
+    </p>
+    <p>
+      One such Module is the  Enumerable Module. We can identify Classes in the Enumerable Module by their ability to use the method  <code>each</code>  . That is they can be iterated over to yield each successive item in a collection. Many Classes you have probably looked at are Enumerable (contained in the Enumerable Module). For example, Arrays and Hashes are enumerable. We can iterate over them using <code>each</code>.
+    </p>
+    <p>
+      One of my favorite enumerable methods is the <code>map</code> method. This method can take items from the object that is passed through it, transform those items using a block of code, and return an array of those items transformed. Here's an example:
+    </p>
+    <p>
+      <code>
+          array = [3, 4, 5, 6]
+      </code>
+    </p>
+    <p>
+      <code>
+          array.map {|i| i*3}
+      </code>
+    </p>
+    <p>
+      <code>
+          => [9, 12, 15, 18]
+      </code>
+    </p>
+    <p>
+      Pretty cool. With <code>map</code> we can "map" items from a given array to a new array of those items transformed by some code! The possibilities are endless with this method. I should also mention that this method, like many methods in Ruby, has another "twin" method. That would be the <code>collect</code> method. It does the same thing! <code>map</code> and <code>collect</code> could be used interchangably.
+    </p>
+    </section>
+    </main>
+    
+    <footer>
+      <table>
+        <tr>
+          <td><a href="https://www.facebook.com/matthew.baquerizo"><img src="../imgs/facebookicon.png" alt="Facebook"></a>
+          </td>
+          <td><a href="https://www.linkedin.com/in/matthew-baquerizo-b437a4a8"><img src="../imgs/linkedinicon.png" alt="Linkedin"></a>
+          </td>
+          <td><a href="https://github.com/mlbaquerizo"><img src="../imgs/githubicon.png" alt="Github"></a>
+          </td>
+          <td><a href="mailto:mlbaquerizo47@gmail.com?Subject=Hello!"><img src="../imgs/mailicon.png" alt="Email"></a>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
