@@ -1,10 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic);
+
 html {
   height: 100%;
   background-color: #ffffff;
 }
 
 body {
-  font-family: monospace;
+  font-family: 'Droid Serif', serif;
+  font-size: .75em;
   background-color: #eaf4f6;
   width: 75em;
   margin: 0 auto;
@@ -17,7 +20,8 @@ body {
 }
 
 header {
-  font-family: 'Times New Roman';
+  background-image: url(../imgs/blurry-vinyl.jpg);
+  font-family: 'Droid Serif', serif;
   background-color: #d2dbdd;
   font-weight: 900;
   letter-spacing: 2px;
