@@ -15,14 +15,3 @@ main p {
   overflow: visible;
   position: relative;
 }
-
-.em {
-  font-style: italic;
-}
-
-code {
-  font-family: monospace;
-  font-size: 0.9em;
-  background-color: white;
-  color: blue;
-}
