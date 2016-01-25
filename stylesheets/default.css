@@ -56,8 +56,8 @@ nav {
   background-color: #8c9293;
 }
 
-.nav1, .nav2, .nav3, .nav4 {
-  width: 24%;
+.nav1, .nav2, .nav3, .nav4, .nav5 {
+  width: 19%;
   display: inline-block;
   height: 30px;
   border-right: 1px solid #757a7b;
