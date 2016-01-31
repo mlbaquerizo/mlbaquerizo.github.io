@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    
+  </head>
+  
+  <body>
+    <a class="home" href="../index.html">
+    <header>
+      <h1>MATTHEW L. BAQUERIZO</h1>
+    </header>
+    </a>
+    
+    <nav>
+        <a class="nav1" href="#"><div>IMAGES--COMING SOON</div></a>
+        <a class="nav2" href="#"><div>MUSIC--COMING SOON</div></a>
+        <a class="nav3" href="../blog/index.html"><div>BLOG</div></a>
+        <a class="nav5" href="./index.html"><div>PROJECTS</div></a>
+        <a class="nav4" href="../about.html"><div>ABOUT</div></a>
+    </nav>
+    
+    <main>
+      <h1 class="heading">Ruby Cheat Sheet</h1>
+
+    <section>
+    <p>
+      <h3>Hashes</h3>
+      Example:
+      <pre><code>
+  hash = {"key1" => value1,
+          "key2" => value2
+          }
+      </code></pre>
+      <ul>
+        <li>A hash is a dictionary of key, value pairs</li>
+        <li>Can be used to store values of properties, or named parameters</li>
+        <li>Keys and values can be any kind of Ruby object</li>
+        <li>Keys are often stored as symbols:</li>
+        <pre><code>
+  hash = {key1: value1,
+          key2: value2
+          }
+        </code></pre>
+        <li>Access values:</li>
+        <pre><code>
+  hash[:key1]
+  => value1
+        </code></pre>
+        <li>Assign new values:</li>
+        <pre><code>
+  hash[:key3] = value3
+  hash[:key3]
+  => value3
+        </code></pre>
+        <li>Useful Hash methods: each, each_key,each_value</li>
+      </ul>
+    </p>
+    <p>
+      <h3>Arrays</h3>
+      Example:
+      <pre><code>
+  array = [thing1, thing2, thing3]
+      </code></pre>
+      <ul>
+        <li>An array is an ordered list of values</li>
+        <li>Can be used to store values without properties</li>
+        <li>Indexed, each value has an index in the Array</li>
+        <li>Indices start at the first object with index 0; proceed in sequential order</li>
+        <li>Similar to hashes, where the keys are numbers from 0..(hash length)</li>
+        <li>Values can be any kind of Ruby object</li>
+        <li>Access values in array:</li>
+        <pre><code>
+  array[0]
+  => thing1
+  array[1]
+  => thing2
+        </code></pre>
+        <li>Assign new values:</li>
+        <pre><code>
+  array[3] = thing4
+  => thing4
+  array
+  => [thing1, thing2, thing3, thing4]
+        </code></pre>
+        <li>Using push method to push new value to end of array:</li>
+        <pre><code>
+  array.push(thing5)
+  => [thing1, thing2, thing3, thing4, thing5]
+        </code></pre>
+        <li>Useful Array Methods: each, push, pop, insert, map, slice</li>
+      </ul>
+    </p>
+    <p>
+      <h3>Strings</h3>
+      Example:
+      <pre><code>
+  string = "I am a string"
+      </code></pre>
+      <ul>
+        <li>A string is a set of characters inside quotes</li>
+        <li>Used to store information understood by users</li>
+        <li>Useful for user interaction with programs</li>
+        <li>Access parts of string by index:</li>
+        <pre><code>
+  string[0]
+  => "I"
+  string[0..3]
+  => "I am"
+        </code></pre>
+        <li>Useful String Methods: +, *, upcase, downcase, capitalize, concat, insert, length, reverse, split, slice, to_i, to_f,to_sym</li>
+      </ul>
+    </p>
+    <p>
+     <h3>Integers</h3>
+     Example:
+     <pre><code>
+  num1 = 6
+  num2 = 3
+     </code></pre>
+     <ul>
+      <li>Integers are negative and positive whole numbers, and 0</li>
+      <li>Useful for loops/iterators and storing numerical data about Hashes, Arrays, or strings.</li>
+      <li>Can be operated on using mathematical functions:</li>
+      <pre><code>
+  num1 + num2
+  => 9
+  num1 - num2
+  => 3
+  num1 * num2
+  => 18
+  num1 / num2
+  => 2
+  num1 % num2  # returns remainder of quotient of two numbers
+  => 0
+      </code></pre>
+      <li>Useful Integer Methods: +, -, *, /, %, to_s, odd?, even?, times{block}, </li>
+     </ul>
+    </p>
+    </section>
+    </main>
+    
+    <footer>
+      <table>
+        <tr>
+          <td><a href="https://www.facebook.com/matthew.baquerizo"><img src="../imgs/facebookicon.png" alt="Facebook"></a>
+          </td>
+          <td><a href="https://www.linkedin.com/in/matthew-baquerizo-b437a4a8"><img src="../imgs/linkedinicon.png" alt="Linkedin"></a>
+          </td>
+          <td><a href="https://github.com/mlbaquerizo"><img src="../imgs/githubicon.png" alt="Github"></a>
+          </td>
+          <td><a href="mailto:mlbaquerizo47@gmail.com?Subject=Hello!"><img src="../imgs/mailicon.png" alt="Email"></a>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
