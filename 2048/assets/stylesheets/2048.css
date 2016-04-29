@@ -1,0 +1,98 @@
+body {
+	font-family: 'Rubik', sans-serif;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 15px;
+	font-weight: normal;
+}
+
+header h1 {
+	margin: auto;
+}
+#buttons {
+	display: inline-block;
+}
+
+input[type=submit] {
+	background-color: #565f5c;
+	padding: 10px 12px;
+	border: none;
+	border-radius: 2px;
+	color: white;
+	cursor: pointer;
+	outline: none;
+}
+
+#back_button {
+	text-align: center;
+	margin-bottom: 10px;
+
+}
+
+.to_home {
+	text-decoration: none;
+	background-color: #565f5c;
+	padding: 8px 12px;
+	border-radius: 2px;
+	color: white;
+	cursor: pointer;
+}
+
+#game_info {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#game_info p, h3 {
+	margin: 0;
+}
+
+.tile {
+	display: inline-block;
+	text-align: center;
+	font-size: 28px;
+	color: white;
+	background: #c8cbbf;
+	padding: 30px;
+	margin-right: 5px;
+	z-index: 10;
+	width: 30px;
+	height: 30px;
+	border-radius: 2px;
+}
+
+#game_div {
+	margin: auto auto 10px;
+	width: 387px;
+	height: 394px;
+	position: relative;
+	padding: 10px;
+	background: #9ea4a2;
+	border-radius: 5px;
+}
+
+#game_board {
+	position: absolute;
+}
+
+.row {
+	margin-bottom: 11px;
+	display: inline-block;
+}
+
+#game_over_div {
+	display: none;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	border-radius: 4px;
+	width: 290px;
+  height: 192px;
+	margin: auto;
+	position: relative;
+	background-color: #001521;
+	opacity: 0.95;
+}

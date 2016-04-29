@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!--
+    application.css is where you put your styles
+  -->
+  <!-- <link rel="stylesheet" href="css/application.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="assets/js/underscore.js"></script>
+  <script src="assets/js/mousetrap.js"></script>
+  <script src="assets/js/game.js"></script>
+  <script src="assets/js/game_setup.js"></script>
+  <script defer src="assets/js/application.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Rubik:500,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/2048.css">
+
+  <title>2048-clone</title>
+</head>
+<body>
+
+  <header>
+    <h1>2048</h1>
+  </header>
+
+  <div id="game_info">
+    <h3>DIRECTIONS</h3>
+    <p>Add up like numbers until you get the 2048 tile</p>
+    <p>Use the arrow keys to move the tiles</p>
+
+    <form class="reset_game">
+      <input type="submit" value="New Game"></input>
+    </form>
+    <div id="current_score_div">
+      <p>Score:</p>
+      <p id="current_score"></p>
+    </div>
+
+  </div>
+  <div id="back_button">
+    <a class="to_home" href="../index.html">Back</a>
+  </div>
+
+  <div id="game_div">
+
+    <div id="game_board">
+      <div class="row" id="row1">
+        <div class="tile outer_left" id="tile1"></div>
+        <div class="tile" id="tile2"></div>
+        <div class="tile" id="tile3"></div>
+        <div class="tile" id="tile4"></div>
+      </div>
+      <div class="row" id="row2">
+        <div class="tile outer_left" id="tile5"></div>
+        <div class="tile" id="tile6"></div>
+        <div class="tile" id="tile7"></div>
+        <div class="tile" id="tile8"></div>
+      </div>
+      <div class="row" id="row3">
+        <div class="tile outer_left" id="tile9"></div>
+        <div class="tile" id="tile10"></div>
+        <div class="tile" id="tile11"></div>
+        <div class="tile" id="tile12"></div>
+      </div>
+      <div class="row" id="row4">
+        <div class="tile outer_left" id="tile13"></div>
+        <div class="tile" id="tile14"></div>
+        <div class="tile" id="tile15"></div>
+        <div class="tile" id="tile16"></div>
+      </div>
+    </div>
+
+    <div id="game_over_div">
+      <p>Game Over!</p>
+      <form class="reset_game">
+        <input type="submit" value="New Game"></input>
+      </form>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
