@@ -3,6 +3,11 @@ body {
   font-style: 'Cantarell';
 }
 
+main {
+  margin: 0 4em 0 4em;
+  text-align: center;
+}
+
 header {
   text-align: center;
 }
