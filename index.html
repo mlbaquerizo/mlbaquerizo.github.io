@@ -3,8 +3,17 @@
   <head>
     <title>Matthew Baquerizo</title>
     <meta charset="UFT-8">
+    <!--
+      normalize.css removes cross-browser differences in defaults, e.g.,
+      differences in how form elements appear between Firefox and IE
+      See: http://necolas.github.com/normalize.css/
+    -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Cantarell:400,700|Monoton' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="./assets/stylesheets/default.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
   </head>
   <body>
     <header>
@@ -13,18 +22,17 @@
 
     <nav>
       <ul>
-        <li><button type="button" name="about">About</button></li>
-        <li><button type="button" name="work">Work</button></li>
-        <li><button type="button" name="contact">Contact</button></li>
+        <li><button type="button" name="about">about</button></li>
+        <li><button type="button" name="work">work</button></li>
+        <li><button type="button" name="contact">contact</button></li>
       </ul>
     </nav>
 
     <main>
-      <div class="content-container">
+      <div id="content-container">
         <div class="main-content" id="content-about">
-          <p>
-            About goes here.
-          </p>
+          <p>Highly detail and design-oriented app builder with an intense drive to advance my skills on both the front and back end. Motivated by the feeling of fulfillment that comes with creating beautiful and meaningful things, I hope to bring my creativity and diverse background to companies that strive to make positive differences with their products.</p>
+          <p>Reach out to me if you want to talk about development, or if you love Jazz, Funk, Blues, Groove, and Soul from around the world.</p>
         </div>
         <div class="main-content" id="content-work">
           <ul>
@@ -45,7 +53,7 @@
           </ul>
         </div>
       </div>
-      <div class="2048 div">
+      <div class="game-link-div">
         <p><a href="2048/index.html">Play A Game!</a></p>
       </div>
     </main>

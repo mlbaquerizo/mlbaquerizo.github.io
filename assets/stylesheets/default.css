@@ -3,16 +3,11 @@ body {
   font-style: 'Cantarell';
 }
 
-main {
-  margin: 0 4em 0 4em;
-  text-align: center;
-}
-
 header {
   text-align: center;
 }
 
-header h1, a {
+header h1, header a {
   font-family: 'Cantarell';
   color: #6b95bf;
   text-decoration: none;
@@ -23,4 +18,67 @@ header h1, a {
 
 .horse-color {
   color: #3BC094;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #3C3C3C;
+  letter-spacing: 2px;
+}
+
+main {
+  margin: 0 4em 0 4em;
+}
+
+#content-container {
+  position: relative;
+}
+
+.main-content {
+  width: 75%;
+  border-radius: 1px;
+  margin: auto;
+  opacity: 0.95;
+  position: relative;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-content p {
+  padding: 10px 20px 10px 20px;
+}
+
+#content-about {
+  background-color: #3BC094;
+  color: white;
+}
+
+#content-work {
+  background-color: #6B95BF;
+  color: white;
+}
+
+#content-contact {
+  background-color: #E91E63;
+  color: white;
+}
+
+.game-link-div {
+  margin: auto;
+  text-align: center;
 }
