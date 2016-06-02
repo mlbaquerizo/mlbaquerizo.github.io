@@ -36,9 +36,11 @@ nav button {
   cursor: pointer;
   background: none;
   border: none;
+  outline: none;
   font-size: 2em;
   color: #3C3C3C;
   letter-spacing: 2px;
+  border-bottom: 4px solid #eff6f3;
 }
 
 main {
@@ -55,12 +57,21 @@ main {
   margin: auto;
   opacity: 0.95;
   position: relative;
-  display: block;
+  display: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-content h2 {
+  padding-top: 4px;
+  text-align: center;
 }
 
 .main-content p {
   padding: 10px 20px 10px 20px;
+}
+
+.main-content br {
+  line-height: 2;
 }
 
 #content-about {
