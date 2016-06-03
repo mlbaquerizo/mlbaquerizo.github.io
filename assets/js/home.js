@@ -34,7 +34,7 @@ $(document).ready(function(){
   })
 
   $contactButton.hover(function(){
-    $(this).css("border-bottom", "4px solid #E91E63")
+    $(this).css("border-bottom", "4px solid #AC305F")
   }, function(){
     $(this).css("border-bottom", "4px solid #eff6f3")
   })
@@ -49,7 +49,7 @@ $(document).ready(function(){
     var $errorDiv = $(this).parent().find('span[id=' + $(this).prop('name') + '-validation]');
     if(emptyFieldVal($(this).val())){
       $errorDiv.html('required field');
-      $errorDiv.css('display', 'block');
+      $errorDiv.css('display', 'inline-block');
     } else {
       $errorDiv.html('');
       $errorDiv.css('display', 'none');
@@ -59,8 +59,8 @@ $(document).ready(function(){
   $('#email').on('blur', function(){
     var $errorDiv = $(this).parent().find('span[id=' + $(this).prop('name') + '-validation]');
     if(!emailVal($(this).val())){
-      $errorDiv.html('please enter a valid email address')
-      $errorDiv.css('display', 'block');
+      $errorDiv.html('enter a valid email address')
+      $errorDiv.css('display', 'inline-block');
     } else {
       $errorDiv.html('');
       $errorDiv.css('display', 'none');

@@ -54,7 +54,7 @@ function handleFormSubmit(event) {
   var data = getFormData();
   // if email is not valid show error
   if( formHasEmptyFields() || formHasIncorrectEmail() ) {
-    var message = 'Hi. Your message could not be received. Please try again.'
+    var message = 'Your message could not be received. Please enter valid data and try again.'
     document.getElementById('after-submit').style.display = 'block';
     document.getElementById('after-submit').innerHTML = message
     return false;

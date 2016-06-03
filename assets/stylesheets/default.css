@@ -44,6 +44,10 @@ nav button {
   border-bottom: 4px solid #eff6f3;
 }
 
+nav button:hover {
+  /* to be continued */
+}
+
 main {
   margin: 0 4em 0 4em;
 }
@@ -54,7 +58,7 @@ main {
 
 .main-content {
   width: 75%;
-  border-radius: 1px;
+  border-radius: 3px;
   margin: auto;
   opacity: 0.95;
   position: relative;
@@ -86,8 +90,27 @@ main {
 }
 
 #content-contact {
-  background-color: #E91E63;
+  background-color: #AC305F;
   color: white;
+}
+
+#content-contact ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+#content-contact li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#content-contact a, #content-contact a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+#content-contact a:hover {
+  color: #eff6f3;
 }
 
 .game-link-div {
