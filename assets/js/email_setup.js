@@ -77,11 +77,12 @@ function handleFormSubmit(event) {
         return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
     }).join('&')
     xhr.send(encoded);
+    document.getElementById('contact-form').reset();
   }
 }
 function loaded() {
-  console.log('contact form submission handler loaded successfully');
-  // bind to the submit event of our form
+  // console.log('contact form submission handler loaded successfully');
+  // bind to the submit event of form
   var form = document.getElementById('contact-form');
   form.addEventListener("submit", handleFormSubmit, false);
 };
