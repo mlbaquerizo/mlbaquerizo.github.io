@@ -1,11 +1,13 @@
 $(document).ready(function(){
 
-  var $aboutButton = $('button[name="about"]')
+  var $aboutButton = $('a[id="about-link"]')
   var $aboutDiv = $('div[id="content-about"]')
-  var $workButton = $('button[name="work"]')
+  var $workButton = $('a[id="work-link"]')
   var $workDiv = $('div[id="content-work"]')
-  var $contactButton = $('button[name="contact"]')
+  var $contactButton = $('a[id="contact-link"]')
   var $contactDiv = $('div[id="content-contact"]')
+
+  var $contentContainer = $('#content-container')
 
   $('nav').show("drop", 500);
 
@@ -16,6 +18,7 @@ $(document).ready(function(){
   })
 
   $aboutButton.click(function(){
+    $contentContainer.show();
     $aboutDiv.fadeToggle(400);
     $workDiv.hide();
     $contactDiv.hide();
@@ -28,6 +31,7 @@ $(document).ready(function(){
   })
 
   $workButton.click(function(){
+    $contentContainer.show();
     $workDiv.fadeToggle(400);
     $aboutDiv.hide();
     $contactDiv.hide();
@@ -40,9 +44,15 @@ $(document).ready(function(){
   })
 
   $contactButton.click(function(){
+    $contentContainer.show();
     $contactDiv.fadeToggle(400);
     $workDiv.hide();
     $aboutDiv.hide();
+  })
+
+  $contactDiv.on('focusout', function(){
+    $('#after-submit').html('');
+    $('#after-submit').css('display', 'none')
   })
 
   $('.email-form-input').on('blur', function(){
@@ -64,6 +74,18 @@ $(document).ready(function(){
     } else {
       $errorDiv.html('');
       $errorDiv.css('display', 'none');
+    }
+  })
+
+  $('.close-content').on('click', function(){
+    $(this).parent().fadeOut();
+    $contentContainer.fadeOut();
+  })
+
+  $(this).on('click', function(e){
+    if($(e.target).has('.main-content').length){
+      $contentContainer.fadeOut();
+      $('main-content').fadeOut();
     }
   })
 })
