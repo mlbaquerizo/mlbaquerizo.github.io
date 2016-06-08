@@ -113,10 +113,6 @@ main {
   width: 100%;
 }
 
-/*#content-container {
-  position: relative;
-}*/
-
 .main-content {
   top: 100px;
   max-height: 410px;
@@ -191,7 +187,7 @@ main {
 
 .content-description {
   padding: 0 15px 0 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 306px;
 }
 
@@ -203,11 +199,13 @@ main {
 #content-contact ul {
   list-style-type: none;
   padding: 10px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #content-contact li {
-  display: inline-block;
   margin-bottom: 10px;
+  display: inline-block;
 }
 
 #content-contact a, #content-contact a:visited {
@@ -219,7 +217,15 @@ main {
   color: #eff6f3;
 }
 
-.game-link-div {
-  margin: auto;
-  text-align: center;
+form input[type="text"] {
+  width: 300px;
+}
+
+form textarea {
+  width: 300px;
+  height: 150px;
+}
+
+form input[type="submit"] {
+
 }

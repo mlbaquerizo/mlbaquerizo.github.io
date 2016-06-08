@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Cantarell:400,700|Monoton' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="./assets/stylesheets/default.css">
-    <link type="text/css"rel="stylesheet" href="./assets/stylesheets/font/flaticon.css">
+    <link type="text/css" rel="stylesheet" href="./assets/stylesheets/font/flaticon.css">
 
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
 
-    <script src="./assets/js/home.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./assets/js/home.js" charset="utf-8"></script>
 
-    <script src="./assets/js/email_setup.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./assets/js/email_setup.js" charset="utf-8"></script>
 
   </head>
   <body>
@@ -39,8 +39,8 @@
     <main>
       <div class="row">
         <div id="content-container">
-          <div class="col-2"></div>
-          <div class="main-content col-8" id="content-about">
+          <div class="col-3"></div>
+          <div class="main-content col-6" id="content-about">
             <button type="button" class="close-content"><img src="./assets/imgs/close_button.svg" alt="close-button" /></button>
             <h2>about me</h2>
             <div class="content-description">
@@ -49,7 +49,7 @@
             Highly detail and design-oriented app builder with an intense drive to advance my skills on both the front and back end. Motivated by the feeling of fulfillment that comes with creating beautiful and meaningful things, I hope to bring my creativity and diverse background to companies that strive to make positive differences with their products.<br>Reach out to me if you want to talk about development, or if you love Jazz, Funk, Blues, Groove, and Soul from around the world.</p>
             </div>
           </div>
-          <div class="main-content col-8" id="content-work">
+          <div class="main-content col-6" id="content-work">
             <button type="button" class="close-content"><img src="./assets/imgs/close_button.svg" alt="close-button" /></button>
             <h2>work</h2>
             <div class="content-description col-4">
@@ -79,28 +79,33 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
-          <div class="main-content col-8" id="content-contact">
+          <div class="main-content col-6" id="content-contact">
             <button type="button" class="close-content"><img src="./assets/imgs/close_button.svg" alt="close-button" /></button>
-            <h2>contact me</h2>
-            <div id="after-submit"></div>
-            <div id="contact-email-form">
-              <form id="contact-form" action="https://script.google.com/macros/s/AKfycbw5qAoiS-yde_umJcVSc5S1k2iDEn6UNYQo2lD4JXOHgXf67dbk/exec" method="POST" enctype="multipart/form-data">
-                <input id="name" class="email-form-input" type="text" name="name" placeholder="Your Name" required>
-                <span id="name-validation" class="error-message"></span><br>
-                <input id="email" class="email-form-input" type="text" name="email" placeholder="Your Email" required>
-                <span id="email-validation" class="error-message"></span><br>
-                <textarea id="message" class="email-form-input" name="message" required>Hello!</textarea>
-                <span id="message-validation" class="error-message"></span><br>
-                <input id="submit-button" type="submit" value="Send message"/>
-              </form>
-            </div>
+            <h2>contact</h2>
+            <div class="row">
+              <div class="content-description">
+                <div id="contact-email-form" class="col-12">
+                  <div id="after-submit"></div>
+                  Send me a message!
+                  <form id="contact-form" action="https://script.google.com/macros/s/AKfycbw5qAoiS-yde_umJcVSc5S1k2iDEn6UNYQo2lD4JXOHgXf67dbk/exec" method="POST" enctype="multipart/form-data">
+                    <input id="name" class="email-form-input" type="text" name="name" placeholder="Your Name" required>
+                    <span id="name-validation" class="error-message"></span><br>
+                    <input id="email" class="email-form-input" type="text" name="email" placeholder="Your Email" required>
+                    <span id="email-validation" class="error-message"></span><br>
+                    <textarea id="message" class="email-form-input" name="message" required>Hello!</textarea>
+                    <span id="message-validation" class="error-message"></span><br>
+                    <input id="submit-button" type="submit" value="Send"/>
+                  </form>
 
-            <ul>
-              <li><a href="https://github.com/mlbaquerizo"><span class="flaticon-circle"></span></a></li>
-              <li><a href="https://www.linkedin.com/in/matthewbaquerizo"><span class="flaticon-social"></span></a></li>
-            </ul>
+                  <ul>
+                    <li><a href="https://github.com/mlbaquerizo"><span class="flaticon-circle"></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/matthewbaquerizo"><span class="flaticon-social"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-2"></div>
+          <div class="col-3"></div>
         </div>
       </div>
     </main>
