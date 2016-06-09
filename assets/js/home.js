@@ -55,6 +55,16 @@ $(document).ready(function(){
     $('#after-submit').css('display', 'none')
   })
 
+  $('.project-link').on('click', function(e){
+    e.preventDefault;
+    var divId = this.id + '-div';
+
+    $(this).css('font-size', '2em');
+    $('#' + divId).removeClass();
+    $('#' + divId).addClass('active');
+
+  })
+
   $('.email-form-input').on('blur', function(){
     var $errorDiv = $(this).parent().find('span[id=' + $(this).prop('name') + '-validation]');
     if(emptyFieldVal($(this).val())){
