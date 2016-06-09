@@ -67,7 +67,7 @@ body {
   position: relative;
   min-height: 100%;
   background-color: #eff6f3;
-  font-style: 'Cantarell';
+  font-style: 'Lato';
 }
 
 header {
@@ -76,21 +76,23 @@ header {
 
 header h1, header a {
   font-family: 'Cantarell';
-  color: #6b95bf;
   text-decoration: none;
+  color: #3c3c3c;
   font-size: 2.5em;
   letter-spacing: -0.09em;
   line-height: 0.67em;
 }
 
 .horse-color {
-  color: #3BC094;
+  color: #B5B5B5;
 }
 
 nav {
+  font-family: 'Raleway';
+  font-weight: 300;
   text-align: center;
   display: none;
-  font-size: 5em;
+  font-size: 4em;
   color: #3c3c3c;
 }
 
@@ -114,9 +116,10 @@ main {
 }
 
 .main-content {
+  font-family: 'Varela Round', sans-serif;
   top: 100px;
   max-height: 410px;
-  border-radius: 3px;
+  border-radius: 10px;
   position: relative;
   display: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
@@ -134,8 +137,8 @@ main {
 
 .main-content .close-content {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: -2px;
   background: none;
   border: none;
   outline: none;
@@ -146,6 +149,7 @@ main {
 .main-content h2 {
   padding-top: 4px;
   text-align: center;
+  letter-spacing: 4px;
 }
 
 .main-content p {
