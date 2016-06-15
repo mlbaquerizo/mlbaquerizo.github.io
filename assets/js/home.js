@@ -59,11 +59,11 @@ $(document).ready(function(){
     e.preventDefault;
     var divId = this.id + '-div';
 
-    $(this).css('font-size', '2em');
-    $('#' + divId).removeClass();
+    $('.work-des-div').removeClass('active');
+    $('.work-des-div').addClass('inactive');
+    $('#' + divId).removeClass('inactive');
     $('#' + divId).addClass('active');
-
-  })
+  });
 
   $('.email-form-input').on('blur', function(){
     var $errorDiv = $(this).parent().find('span[id=' + $(this).prop('name') + '-validation]');
@@ -99,3 +99,12 @@ $(document).ready(function(){
     }
   })
 })
+
+function clickSingleA(a){
+  items = document.querySelectorAll('.project-link.active');
+
+  if(items.length){
+    items[0].className = 'project-link';
+  }
+  a.className = 'project-link active';
+}

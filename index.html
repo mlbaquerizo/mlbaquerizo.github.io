@@ -57,14 +57,14 @@
             <h2>work</h2>
             <div class="content-description col-4">
               <ul>
-                <li><a id="cw" class="project-link" href="#">Concrete + Water</a></li>
-                <li><a id="2048" class="project-link" href="#">2048 Clone</a></li>
-                <li><a id="yonder" class="project-link" href="#">Yonder</a></li>
-                <li><a id="in" class="project-link" href="#">In</a></li>
+                <li class="project-links"><a onclick="clickSingleA(this)" id="cw" class="project-link active" href="#">Concrete + Water</a></li>
+                <li class="project-links"><a onclick="clickSingleA(this)" id="2048" class="project-link" href="#">2048 Clone</a></li>
+                <li class="project-links"><a onclick="clickSingleA(this)" id="yonder" class="project-link" href="#">Yonder</a></li>
+                <li class="project-links"><a onclick="clickSingleA(this)" id="in" class="project-link" href="#">In</a></li>
               </ul>
             </div>
             <div class="content-description col-8">
-              <div id="cw-div" class="active">
+              <div id="cw-div" class="work-des-div active">
                 <div class="work-img-div">
                   <img class="work-img" src="./assets/imgs/work/cw-img.png" alt="cw" />
                 </div>
@@ -75,8 +75,8 @@
                 </div>
               </div>
 
-              <div id="2048-div" class="inactive">
-                <div class="work-img">
+              <div id="2048-div" class="work-des-div inactive">
+                <div class="work-img-div">
                   <img class="work-img" src="./assets/imgs/work/2048-img.png" alt="2048" />
                 </div>
                 <div class="work-des">
@@ -86,19 +86,36 @@
                 </div>
               </div>
 
-              <div id="yonder-div" class="inactive">
-                <div class="work-img">
+              <div id="yonder-div" class="work-des-div inactive">
+                <div class="work-img-div">
                   <img class="work-img" src="./assets/imgs/work/yonder-img.png" alt="yonder" />
                 </div>
                 <div class="work-des">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Yonder helps pastoralist communities around the world preserve their livelihood, by providing them access to information and resources (e.g grass land, water sources, safe routes) to prepare and support their migration journey.
+                  </p>
+                  <p>
+                    The objective of the project is to design a working prototype for a mobile/web application which provides pastoralist communities with information on land monitoring: water availability, grassland, and assist communities in networking.
+                  </p>
+                  <p>
+                    We developed 3 possible mediums to accommodate the widest possible range of users : A web app, a mobile app, and an SMS-based service. Our solutions are deliberately lo-fi because of the likelihood of slow internet connections or none at all.
+                  </p>
+                  <p>
+                    Technologies:
+                    <ul>
+                      <li>Waterpoint Data Exchange (Socrata) for data on water sources.</li>
+                      <li>Weather Underground API for weather data and alerts.</li>
+                      <li>Twilio API for SMS service.</li>
+                    </ul>
+                  </p>
+                  <p>
+                    Yonder was awarded the prize for "Greatest Galactic Impact" at NASA Space Apps Challenge 2016 NYC.
                   </p>
                 </div>
               </div>
 
-              <div id="in-div" class="inactive">
-                <div class="work-img">
+              <div id="in-div" class="work-des-div inactive">
+                <div class="work-img-div">
                   <img class="work-img" src="./assets/imgs/work/" alt="" />
                 </div>
                 <div class="work-des">

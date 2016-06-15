@@ -88,11 +88,7 @@ header h1, header a {
   color: #3c3c3c;
   font-size: 2.5em;
   letter-spacing: -0.09em;
-  line-height: 0.67em;
-}
-
-.horse-color {
-  color: #B5B5B5;
+  line-height: 0.7em;
 }
 
 nav {
@@ -127,7 +123,7 @@ main {
   font-family: 'Varela Round', sans-serif;
   top: 100px;
   max-height: 410px;
-  border-radius: 10px;
+  border-radius: 1px;
   position: relative;
   display: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
@@ -188,13 +184,17 @@ main {
   padding: 0;
 }
 
-#content-work li:hover {
-  font-size: 2em;
-}
-
 #content-work .project-link {
   text-decoration: none;
   color: inherit;
+}
+
+.project-link:hover, .project-link.active {
+  font-size: 1.5em;
+}
+
+.work-img-div {
+  margin: auto;
 }
 
 .work-img {
@@ -202,9 +202,13 @@ main {
   border: 1px solid #b5b5b5;
 }
 
+.work-des p {
+  padding-left: 0px;
+}
+
 .content-description {
   padding: 0 15px 0 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   max-height: 306px;
 }
