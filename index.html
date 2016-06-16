@@ -49,14 +49,21 @@
             <button type="button" class="close-content"><img src="./assets/imgs/close_button.svg" alt="close-button" /></button>
             <h2>about me</h2>
             <div class="content-description">
-              <p>Highly detail and design-oriented app builder with an intense drive to advance my skills on both the front and back end. Motivated by the feeling of fulfillment that comes with creating beautiful and meaningful things, I hope to bring my creativity and diverse background to companies that strive to make positive differences with their products.<br>Reach out to me if you want to talk about development, or if you love Jazz, Funk, Blues, Groove, and Soul from around the world.</p>
+              <p>Matthew is a highly detail and design-oriented app builder with an intense drive to advance his skills on both the front and back end. Motivated by the feeling of fulfillment that comes with creating beautiful and meaningful things, he hopes to bring my creativity and diverse background to companies that strive to make positive differences with their products.<br>Matthew also loves Jazz, Funk, Blues, Groove, and Soul from around the world and has a growing vinyl reord collection.</p>
+              <h3>Skills:</h3>
+              <ul>
+                <li>Languages: JavaScript, Ruby, HTML5, CSS3, Shopify Liquid</li>
+                <li>Frameworks: Ruby on Rails, Sinatra, ReactJS, Bootstrap</li>
+                <li>Databases: Active Record, PostgreSQL, SQLite</li>
+                <li>Other: Object Oriented Programming, Agile Development, REST, MVC, RSpec, Jasmine</li>
+              </ul>
             </div>
           </div>
           <div class="main-content col-6" id="content-work">
             <button type="button" class="close-content"><img src="./assets/imgs/close_button.svg" alt="close-button" /></button>
             <h2>work</h2>
             <div class="content-description col-4">
-              <ul>
+              <ul class="ul-projects">
                 <li class="project-links"><a onclick="clickSingleA(this)" id="cw" class="project-link active" href="#">Concrete + Water</a></li>
                 <li class="project-links"><a onclick="clickSingleA(this)" id="2048" class="project-link" href="#">2048 Clone</a></li>
                 <li class="project-links"><a onclick="clickSingleA(this)" id="yonder" class="project-link" href="#">Yonder</a></li>
@@ -66,49 +73,55 @@
             <div class="content-description col-8">
               <div id="cw-div" class="work-des-div active">
                 <div class="work-img-div">
-                  <img class="work-img" src="./assets/imgs/work/cw-img.png" alt="cw" />
+                  <a href="https://www.concreteandwater.com/"><img class="work-img" src="./assets/imgs/work/cw-img.png" alt="cw" /></a>
                 </div>
                 <div class="work-des">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Customization of Shopify powered web-store. Use of Javascript (JQuery, JSON), HTML, and CSS to make desired changes to home page.
+                    <ul>
+                      <li>Ensured responsiveness and usability after customizations were made</li>
+                      <li>Fixed existing bug in codebase that caused the subscribe form to move when the screen resized</li>
+                      <li>Work with designer to client needs are met</li>
+                    </ul>
                   </p>
                 </div>
               </div>
 
               <div id="2048-div" class="work-des-div inactive">
                 <div class="work-img-div">
-                  <img class="work-img" src="./assets/imgs/work/2048-img.png" alt="2048" />
+                  <a href="./2048/index.html"><img class="work-img" src="./assets/imgs/work/2048-img.png" alt="2048" /></a>
                 </div>
                 <div class="work-des">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Implementation of the game 2048, built in JavaScript using the JQuery, Underscore.js, and Mousetrap libraries.
+                    <ul>
+                      <li>Apply best practices within the MVC architectural pattern to exhibit clean and organized code</li>
+                      <li>Build user interface with HTML and CSS with JQuery DOM manipulation for a smooth and coherent user experience</li>
+                      <li>Construct game models and both front and back-end logic from the ground up</li>
+                    </ul>
                   </p>
                 </div>
               </div>
 
               <div id="yonder-div" class="work-des-div inactive">
                 <div class="work-img-div">
-                  <img class="work-img" src="./assets/imgs/work/yonder-img.png" alt="yonder" />
+                  <a href="https://overyonder.herokuapp.com/"><img class="work-img" src="./assets/imgs/work/yonder-img.png" alt="yonder" /></a>
                 </div>
                 <div class="work-des">
                   <p>
                     Yonder helps pastoralist communities around the world preserve their livelihood, by providing them access to information and resources (e.g grass land, water sources, safe routes) to prepare and support their migration journey.
-                  </p>
-                  <p>
+                  <br>
                     The objective of the project is to design a working prototype for a mobile/web application which provides pastoralist communities with information on land monitoring: water availability, grassland, and assist communities in networking.
-                  </p>
-                  <p>
+                  <br>
                     We developed 3 possible mediums to accommodate the widest possible range of users : A web app, a mobile app, and an SMS-based service. Our solutions are deliberately lo-fi because of the likelihood of slow internet connections or none at all.
-                  </p>
-                  <p>
+                  <br>
                     Technologies:
                     <ul>
                       <li>Waterpoint Data Exchange (Socrata) for data on water sources.</li>
                       <li>Weather Underground API for weather data and alerts.</li>
                       <li>Twilio API for SMS service.</li>
                     </ul>
-                  </p>
-                  <p>
+                    <br>
                     Yonder was awarded the prize for "Greatest Galactic Impact" at NASA Space Apps Challenge 2016 NYC.
                   </p>
                 </div>
@@ -116,11 +129,17 @@
 
               <div id="in-div" class="work-des-div inactive">
                 <div class="work-img-div">
-                  <img class="work-img" src="./assets/imgs/work/" alt="" />
+                  <a href="https://github.com/nyc-fiddler-crabs-2016/in-ios-2016"><img class="work-img" src="./assets/imgs/work/" alt="" /></a>
                 </div>
                 <div class="work-des">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    A social iOS messaging app where conversations are deleted at a set expiration date. Built in 6 days in Swift with a Firebase-powered back end without prior experience or knowledge of either technology.
+                    <br>
+                    <ul>
+                      <li>Set up data architecture to maximize efficiency in data querying</li>
+                      <li>Utilize Firebase user authentication in codebase to handle user on-boarding</li>
+                      <li>Employ custom Ruby on Rails server to handle post requests to Apple Push Notification Service</li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -134,8 +153,8 @@
               <div class="content-description">
                 <div id="contact-email-form" class="col-12">
                   <div id="after-submit"></div>
-                  Send me a message!
                   <form id="contact-form" action="https://script.google.com/macros/s/AKfycbw5qAoiS-yde_umJcVSc5S1k2iDEn6UNYQo2lD4JXOHgXf67dbk/exec" method="POST" enctype="multipart/form-data">
+                    Send me a message!<br>
                     <input id="name" class="email-form-input" type="text" name="name" placeholder="Your Name" required>
                     <span id="name-validation" class="error-message"></span><br>
                     <input id="email" class="email-form-input" type="text" name="email" placeholder="Your Email" required>

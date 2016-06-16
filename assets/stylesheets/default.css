@@ -174,7 +174,7 @@ main {
   color: white;
 }
 
-#content-work ul {
+.ul-projects {
   list-style: none;
   padding: 0 0 0 10px;
 }
@@ -218,6 +218,12 @@ main {
   color: white;
 }
 
+#contact-form {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
 #content-contact ul {
   list-style-type: none;
   padding: 10px;
@@ -241,6 +247,14 @@ main {
 
 form input[type="text"] {
   width: 300px;
+}
+
+form input[type="submit"] {
+  outline: none;
+  color: white;
+  background-color: #3c3c3c;
+  border: none;
+  border-radius: 3px;
 }
 
 form textarea {
