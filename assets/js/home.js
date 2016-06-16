@@ -57,12 +57,13 @@ $(document).ready(function(){
 
   $('.project-link').on('click', function(e){
     e.preventDefault;
-    var divId = this.id + '-div';
+    var divId = '#' + this.id + '-div';
 
     $('.work-des-div').removeClass('active');
     $('.work-des-div').addClass('inactive');
-    $('#' + divId).removeClass('inactive');
-    $('#' + divId).addClass('active');
+    $(divId).removeClass('inactive');
+    $(divId).addClass('active');
+    $(divId).parent().scrollTop(0);
   });
 
   $('.email-form-input').on('blur', function(){
