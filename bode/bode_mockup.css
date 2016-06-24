@@ -1,0 +1,145 @@
+.main_image_div ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+.main_image_div :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+   opacity:  1;
+}
+.main_image_div ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white;
+   opacity:  1;
+}
+.main_image_div :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+
+.footer ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: black;
+    text-align: center;
+}
+.footer :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: black;
+   opacity:  1;
+   text-align: center;
+}
+.footer ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: black;
+   opacity:  1;
+   text-align: center;
+}
+.footer :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: black;
+   text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 15px;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+.form_submit {
+  display: none;
+}
+
+.main_image_div {
+  position: relative;
+}
+
+.main_image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.header_nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+.header_nav a, .header_nav a:visited {
+  color: white;
+}
+
+.search_cart a, .search_cart a:visited {
+  font-size: 25px;
+}
+
+.store_nav a, .store_nav a:visited {
+  font-size: 20px;
+}
+
+.search_question {
+  color: white;
+  font-size: 20px;
+}
+
+.search_input {
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: rgba(255, 0, 0, 0);
+  outline: none;
+  color: white;
+  font-size: 20px;
+  width: 100px;
+
+  -webkit-appearance: none;
+}
+
+.footer {
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+}
+
+.footer::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.copyright {
+  float: left;
+  width: 30%;
+}
+
+.copyright p {
+  margin: 0 0 0 15px;
+}
+
+.sub_form_div {
+  float: left;
+  width: 40%;
+}
+
+.sub_form {
+  width: 60%;
+  margin: auto;
+}
+
+.sub_input {
+  border: none;
+  background-color: rgba(255, 0, 0, 0);
+  outline: none;
+  font-size: 20px;
+  -webkit-appearance: none;
+}
+
+.footer_nav {
+  float: left;
+  width: 30%;
+  text-align: right;
+}
+
+.footer_nav a {
+  float: left;
+  color: black;
+}
