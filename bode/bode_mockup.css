@@ -1,4 +1,4 @@
-.main_image_div ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  .main_image_div ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: white;
 }
 .main_image_div :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
