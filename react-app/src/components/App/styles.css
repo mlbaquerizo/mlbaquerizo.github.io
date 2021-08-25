@@ -1,0 +1,34 @@
+.App {
+  color: white;
+  height: 500vh;
+  width: 100%;
+}
+
+.App-header {
+  position: fixed;
+  z-index: 2;
+}
+
+.App-main {
+  position: relative;
+}
+
+.App-main img {
+  width: 200px;
+  position: absolute;
+  bottom: -250vh;
+  left: 50%;
+  transform: translate(-65%, 0);
+}
+
+/* Desktop specific */
+
+@media (min-width: 768px) {
+  .App-main img {
+    width: 400px;
+    position: absolute;
+    bottom: -250vh;
+    left: 50%;
+    transform: translate(-65%, 0);
+  }
+}
