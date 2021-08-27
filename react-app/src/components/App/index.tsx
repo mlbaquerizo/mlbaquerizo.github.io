@@ -1,4 +1,5 @@
 import { useScrollPosition, useWindowDimensions } from '../../hooks';
+import ImageWithFadein from '../ImageWithFadein';
 import './styles.css';
 import bonfireImgSrc from '../../assets/bonfire_v2.gif';
 
@@ -6,8 +7,7 @@ const App = () => {
 
   const scrollPosition = useScrollPosition();
   const { height: viewportHeight, width: viewportWidth } = useWindowDimensions();
-  
-  const isBonfireInView = scrollPosition >= viewportHeight * 1.75
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,16 +17,10 @@ const App = () => {
         <p>position when fixed: {((viewportHeight * .75) - 400)}</p>
       </header>
       <main className="App-main">
-        <img
-          className={
-            !isBonfireInView ?
-              "bonfire-gif"
-              : "bonfire-gif fixed-gif"
-          }
+        <ImageWithFadein
           src={bonfireImgSrc}
-          alt=""
+          centerOffset={-15}
         />
-        <div className={isBonfireInView ? "overlay fadeout" : "overlay"}></div>
       </main>
       
     </div>

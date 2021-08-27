@@ -9,14 +9,10 @@
   z-index: 3;
 }
 
-.App-main {
-  position: relative;
-}
-
 .bonfire-gif {
   width: 200px;
   position: absolute;
-  bottom: -250vh;
+  top: calc(250vh - 400);
   left: 50%;
   transform: translate(-65%, 0);
 }

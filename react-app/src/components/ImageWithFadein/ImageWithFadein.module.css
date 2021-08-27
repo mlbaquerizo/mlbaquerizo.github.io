@@ -1,0 +1,33 @@
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  transform: scale(0.5);
+  position: absolute;
+  left: 50%;
+}
+
+.imageFixed {
+  position: fixed;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #181e25;
+  transition: background-color 2s ease-in-out;
+}
+
+.overlay.fadeout {
+  background-color: rgba(0,0,0,0);
+  transition: background-color 4s ease-out;
+}
+
+@media (min-width: 768px) {
+  .image {
+    transform: scale(1);
+  }
+}
