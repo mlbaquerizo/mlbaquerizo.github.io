@@ -13,18 +13,20 @@ const App = () => {
       <header className="App-header">
         <p>scroll position: {scrollPosition} / {viewportHeight * 4}</p>
         <p>bonfire breakpoint: {viewportHeight * 1.75}</p>
-        <p>width: {viewportWidth}</p>
+        <p>width: {viewportWidth} height: {viewportHeight}</p>
+        <p>position when fixed: {((viewportHeight * .75) - 400)}</p>
       </header>
       <main className="App-main">
         <img
           className={
             !isBonfireInView ?
               "bonfire-gif"
-              : "bonfire-gif-fixed"
+              : "bonfire-gif fixed-gif"
           }
           src={bonfireImgSrc}
           alt=""
         />
+        <div className={isBonfireInView ? "overlay fadeout" : "overlay"}></div>
       </main>
       
     </div>

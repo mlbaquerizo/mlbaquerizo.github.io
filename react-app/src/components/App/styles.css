@@ -6,14 +6,14 @@
 
 .App-header {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
 }
 
 .App-main {
   position: relative;
 }
 
-.App-main img {
+.bonfire-gif {
   width: 200px;
   position: absolute;
   bottom: -250vh;
@@ -21,14 +21,35 @@
   transform: translate(-65%, 0);
 }
 
+.fixed-gif {
+  position: fixed;
+  bottom: unset;
+  top: calc(75vh - 200px);
+
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #181e25;
+  transition: background-color 2s ease-in-out;
+}
+
+.overlay.fadeout {
+  background-color: rgba(0,0,0,0);
+  transition: background-color 4s ease-out;
+}
+
 /* Desktop specific */
 
 @media (min-width: 768px) {
-  .App-main img {
+  .App-main .bonfire-gif {
     width: 400px;
-    position: absolute;
-    bottom: -250vh;
-    left: 50%;
-    transform: translate(-65%, 0);
+  }
+
+  .fixed-gif {
+    top: calc(75vh - 400px);
   }
 }
