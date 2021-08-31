@@ -1,18 +1,21 @@
-import { useEffect, useState } from 'react';
-import { usePrevious, useScrollPosition, useWindowDimensions } from '../../hooks';
+import { useState } from 'react';
+import { useScrollPosition, useWindowDimensions } from '../../hooks';
 import styles from './ImageWithFadein.module.css';
 
 /**
  * ImageWithFadeinProps
  * centerOffset: % off center (0) with left offset negative,
  *   right offset positive
+ * scrollTo: position in vh of image before coming into view
+ * imageTop: fixed position in vh of image when in view
  */
 
 interface ImageWithFadeinProps {
   src: string;
   width?: number;
   height?: number;
-  // scrollTo: number;
+  scrollTo: number;
+  imageTop: number;
   centerOffset?: number;
 }
 
@@ -20,35 +23,24 @@ const ImageWithFadein = ({
   src,
   height,
   width,
+  scrollTo,
+  imageTop,
   centerOffset = 0,
 }: ImageWithFadeinProps) => {
   const [imageHeight, setImageHeight] = useState<number>();
-  const [inlineImageStyles, setInlineImageStyles] = useState({});
-  const [isImageInView, setIsImageInView] = useState<boolean>();
-  
   const scrollPosition = useScrollPosition();
   const { height: viewportHeight } = useWindowDimensions();
-
   const getImageHeight = (e: any) => {
     setImageHeight(e.target.offsetHeight);
   }
+  const fixedBreakpoint = (viewportHeight * (scrollTo / 100)) - (viewportHeight * (imageTop / 100)); 
+  const isImageInView = scrollPosition >= fixedBreakpoint;
+  const inlineImageStyles = isImageInView ? {
+    top: `calc(${imageTop}vh - ${imageHeight}px)`,
+  } : {
+    top: `calc(${scrollTo}vh - ${imageHeight}px)`,
+  };
 
-  useEffect(() => {
-    setIsImageInView(scrollPosition >= viewportHeight * 1.75)
-  }, [scrollPosition, viewportHeight]);
-
-  const wasImageInView = usePrevious(isImageInView);
-  useEffect(() => {
-    if(wasImageInView !== isImageInView) {
-      setInlineImageStyles(isImageInView ? {
-        top: `calc(75vh - ${imageHeight}px)`
-      } : {
-        top: `calc(250vh - ${imageHeight}px)`,
-      });
-    }
-  }, [wasImageInView, isImageInView, imageHeight]);
-
-  console.log("IMAGE HEIGHT:::", inlineImageStyles);
   return (
     <div className={styles.imageContainer}>
       <img
@@ -61,7 +53,6 @@ const ImageWithFadein = ({
         alt=""
         style={{
           ...inlineImageStyles,
-          color: 'red',
           transform: `translate(${-50 + centerOffset}%, 0)`,
           height: height?.toString(),
           width: width?.toString(),

@@ -20,6 +20,8 @@ const App = () => {
         <ImageWithFadein
           src={bonfireImgSrc}
           centerOffset={-15}
+          scrollTo={250}
+          imageTop={80}
         />
       </main>
       
