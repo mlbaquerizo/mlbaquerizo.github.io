@@ -10,9 +10,12 @@
     "@types/node": "16.7.1",
     "@types/react": "17.0.19",
     "@types/react-dom": "17.0.9",
+    "@types/react-typist": "2.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-typist": "2.0.5",
+    "typed.js": "2.0.12",
     "typescript": "4.3.5",
     "web-vitals": "^1.1.2"
   },
@@ -29,9 +32,10 @@
     ],
     "overrides": [
       {
-        "files": ["**/*.ts?(x)"],
-        "rules": {
-        }
+        "files": [
+          "**/*.ts?(x)"
+        ],
+        "rules": {}
       }
     ]
   },

@@ -29,7 +29,7 @@ const ImageWithFadein = ({
 }: ImageWithFadeinProps) => {
   const [imageHeight, setImageHeight] = useState<number>();
   const scrollPosition = useScrollPosition();
-  const { height: viewportHeight } = useWindowDimensions();
+  const { height: viewportHeight, width: viewportWidth } = useWindowDimensions();
   const getImageHeight = (e: any) => {
     setImageHeight(e.target.offsetHeight);
   }
@@ -40,28 +40,28 @@ const ImageWithFadein = ({
   } : {
     top: `calc(${scrollTo}vh - ${imageHeight}px)`,
   };
+  const isMobileWidth = viewportWidth < 768;
 
   return (
     <div className={styles.imageContainer}>
       <img
         className={
           !isImageInView ?
-            styles.image
-            : `${styles.image} ${styles.imageFixed}`
+            `${styles.image} ${styles.imageInvisible}`
+            : `${styles.image} ${styles.imageFixed} ${styles.imageVisible}`
         }
         src={src}
         alt=""
         style={{
           ...inlineImageStyles,
-          transform: `translate(${-50 + centerOffset}%, 0)`,
+          transform: `translate(calc(-50% + ${centerOffset}vw), 0)${isMobileWidth ? ' scale(0.5)' : ''}`,
           height: height?.toString(),
-          width: width?.toString(),
+          width: `${width?.toString()}px`,
         }}
         onLoad={getImageHeight}
       />
-      <div className={isImageInView ? `${styles.overlay} ${styles.fadeout}` : styles.overlay}></div>
     </div>
-  )
+  );
 }
 
 export default ImageWithFadein;

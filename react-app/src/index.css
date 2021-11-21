@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'DisposableDroid';
+  src: local('DisposableDroid'), url(./assets/disposabledroid-bb.regular.ttf) format('truetype');
+}
+
+
 body {
   margin: 0;
   padding: 0;
