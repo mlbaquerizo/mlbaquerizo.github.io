@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f25a0e49.css",
+    "main.js": "/static/js/main.d069797f.js",
+    "static/js/787.d8c47fce.chunk.js": "/static/js/787.d8c47fce.chunk.js",
+    "static/media/bonfire_v2.gif": "/static/media/bonfire_v2.bc1a291bcf97e5c16fc0.gif",
+    "static/media/disposabledroid-bb.regular.ttf": "/static/media/disposabledroid-bb.regular.1e70fef7a8077a780569.ttf",
+    "index.html": "/index.html",
+    "main.f25a0e49.css.map": "/static/css/main.f25a0e49.css.map",
+    "main.d069797f.js.map": "/static/js/main.d069797f.js.map",
+    "787.d8c47fce.chunk.js.map": "/static/js/787.d8c47fce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f25a0e49.css",
+    "static/js/main.d069797f.js"
+  ]
+}
