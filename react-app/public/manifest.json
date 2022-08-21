@@ -1,0 +1,15 @@
+{
+  "short_name": "Matthew Baquerizo",
+  "name": "Matthew Baquerizo",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "https://mlbaquerizo.github.io",
+  "display": "standalone",
+  "theme_color": "#2b73c5",
+  "background_color": "#181e25"
+}
